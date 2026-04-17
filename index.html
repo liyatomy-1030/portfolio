@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+    body {
+      line-height: 1.6;
+      background: #f4f6f9;
+      color: #2c3e50;
+    }
+
+    header {
+      background: #1f2a44;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #dcdde1;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover { color: #ffffff; }
+
+    section {
+      padding: 60px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #1f2a44;
+    }
+
+    .about-container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .about-container img {
+      width: 180px;
+      border-radius: 50%;
+      border: 4px solid #1f2a44;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card-content { padding: 15px; }
+
+    #contact input, #contact textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      padding: 12px 20px;
+      background: #1f2a44;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    button:hover { background: #2f3e66; }
+
+    footer {
+      background: #1f2a44;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>LIYA TOMY</h1>
+  <p>Web Developer | Student | Aspiring Engineer | second year student</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <img src="photo.jpg" alt="Profile Photo">
+    <p>I am a passionate developer learning C, Web Development, and more. I enjoy building clean and professional user-friendly applications.I’m a passionate and curious Computer Science student with a strong interest in programming, web development, and problem-solving.
+
+I enjoy working with languages like C and exploring concepts in computer hardware, networking, and operating systems. I’m currently building my skills through hands-on projects, practice programs, and continuous learning.
+
+I’m particularly interested in developing clean, user-friendly websites and understanding how systems work behind the scenes. I like turning ideas into practical solutions and constantly challenging myself with new technologies.
+
+I’m looking forward to opportunities where I can grow my skills, contribute to real-world projects, and build a strong career in tech.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <img src="logo.png.png" alt="Project 1">
+      <div class="card-content">
+        <h3>CANTEEN MANAGEMENT SYSTEM</h3>
+        <p>Simple website to reduce rush in canteen.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="clg.png.png" alt="Project 2">
+      <div class="card-content">
+        <h3>College website</h3>
+        <p>college website simple.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="xukai.png" alt="Project 3">
+      <div class="card-content">
+        <h3>Chinese Actor Website</h3>
+        <p>A simple website about xukai.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <input type="text" id="name" placeholder="Your Name">
+  <input type="email" id="email" placeholder="Your Email">
+  <textarea id="message" placeholder="Your Message"></textarea>
+  <button onclick="sendMessage()">Send</button>
+</section>
+
+<footer>
+  <p>© 2026 Your Name</p>
+</footer>
+
+<script>
+  function sendMessage() {
+    let name = document.getElementById("name").value;
+    if(name === ""){
+      alert("Please enter your name");
+    } else {
+      alert("Message sent!");
+    }
+  }
+</script>
+
+</body>
+</html>
