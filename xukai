@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xu Kai Fan Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #1e1e2f, #3a3a6a);
+      color: white;
+      text-align: center;
+    }
+    header {
+      padding: 40px;
+      background: rgba(0,0,0,0.5);
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .container {
+      padding: 20px;
+    }
+    img {
+      width: 250px;
+      border-radius: 15px;
+      margin: 20px 0;
+    }
+    .section {
+      margin: 40px 0;
+    }
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      margin: 10px;
+      border-radius: 15px;
+      display: inline-block;
+      width: 250px;
+    }
+    footer {
+      padding: 20px;
+      background: rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Xu Kai</h1>
+    <p>Chinese Actor & Model</p>
+  </header>
+
+  <div class="container">
+
+    <div class="section">
+      <img src="xukai.png" alt="Xu Kai">
+      <p>
+        Xu Kai is a popular Chinese actor and model known for his roles in historical and romantic dramas.
+        He gained widespread recognition through hit series and has become a fan favorite for his charm and acting skills.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Popular Dramas</h2>
+      <div class="card">Story of Yanxi Palace</div>
+      <div class="card">Arsenal Military Academy</div>
+      <div class="card">Falling Into Your Smile</div>
+    </div>
+
+    <div class="section">
+      <h2>About Him</h2>
+      <p>
+        Born on March 5, 1995, Xu Kai started his career as a model before entering the entertainment industry.
+        His talent and screen presence quickly made him one of the rising stars in Chinese television.
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Made with ❤️ by Rose</p>
+  </footer>
+
+</body>
+</html>
