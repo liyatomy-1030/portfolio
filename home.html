@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SJCET Palai Canteen</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#0b0b1f;
+color:white;
+}
+
+/* Navigation Bar */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#111;
+padding:15px 50px;
+}
+
+nav h2{
+color:#ff4444;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-size:18px;
+}
+
+nav ul li a:hover{
+color:#ff4444;
+}
+
+/* Hero Section */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("https://images.unsplash.com/photo-1504674900247-0877df9cc836");
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.hero button{
+padding:15px 30px;
+font-size:18px;
+border:none;
+background:#ff4444;
+color:white;
+border-radius:10px;
+cursor:pointer;
+}
+
+.hero button:hover{
+background:#cc0000;
+}
+
+/* About Section */
+
+.about{
+padding:60px;
+text-align:center;
+}
+
+.about h2{
+margin-bottom:20px;
+color:#ff4444;
+}
+
+.about p{
+font-size:18px;
+max-width:800px;
+margin:auto;
+}
+
+/* Footer */
+
+footer{
+background:#111;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+
+<h2>SJCET Palai</h2>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="history.html">Orders</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="login.html">Login</a></li>
+
+</ul>
+
+</nav>
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+<h1>Welcome to SJCET Palai Canteen</h1>
+
+<p>Order delicious food from your college canteen easily and quickly.</p>
+
+<button onclick="location.href='menu.html'">Order Food</button>
+
+</section>
+
+<!-- About -->
+
+<section class="about">
+
+<h2>About Our Canteen</h2>
+
+<p>
+The SJCET Palai College Canteen provides a variety of delicious and affordable food
+items for students, teachers, and staff. This online food ordering system allows
+users to browse the menu, place orders, and view order history easily. Our goal
+is to make food ordering faster and more convenient for everyone in the college.
+</p>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<p>© 2026 SJCET Palai Canteen | College Food Ordering System</p>
+
+</footer>
+
+</body>
+</html>

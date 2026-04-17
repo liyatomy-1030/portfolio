@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>Canteen Ordering System</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#0b0b1f;
+color:white;
+text-align:center;
+}
+
+h1{
+margin-top:20px;
+}
+
+.menu{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:#ff1a1a;
+width:200px;
+padding:20px;
+border-radius:15px;
+}
+
+button{
+background:white;
+color:red;
+border:none;
+padding:10px;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:black;
+color:white;
+}
+
+.cart{
+background:#111;
+margin:30px auto;
+width:300px;
+padding:20px;
+border-radius:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>College Canteen Menu</h1>
+
+<div class="menu">
+
+<div class="card">
+<h3>Pizza</h3>
+<p>₹120</p>
+<button onclick="addItem('Pizza',120)">Order</button>
+</div>
+
+<div class="card">
+<h3>Burger</h3>
+<p>₹80</p>
+<button onclick="addItem('Burger',80)">Order</button>
+</div>
+
+<div class="card">
+<h3>Pasta</h3>
+<p>₹100</p>
+<button onclick="addItem('Pasta',100)">Order</button>
+</div>
+
+<div class="card">
+<h3>Noodles</h3>
+<p>₹70</p>
+<button onclick="addItem('Noodles',70)">Order</button>
+</div>
+
+<div class="card">
+<h3>Sandwich</h3>
+<p>₹60</p>
+<button onclick="addItem('Sandwich',60)">Order</button>
+</div>
+
+<div class="card">
+<h3>Cold Coffee</h3>
+<p>₹40</p>
+<button onclick="addItem('Cold Coffee',40)">Order</button>
+</div>
+
+</div>
+
+
+<div class="cart">
+
+<h2>Your Orders</h2>
+
+<ul id="orderList"></ul>
+
+<h3>Total: ₹ <span id="total">0</span></h3>
+
+<button onclick="placeOrder()">Place Order</button>
+
+</div>
+
+
+<script>
+
+let total=0;
+
+function addItem(item,price){
+
+let list=document.getElementById("orderList");
+
+let li=document.createElement("li");
+
+li.innerText=item+" - ₹"+price;
+
+list.appendChild(li);
+
+total+=price;
+
+document.getElementById("total").innerText=total;
+
+}
+
+function placeOrder(){
+
+if(total==0)
+{
+alert("Please select food first");
+}
+else
+{
+alert("Order Placed Successfully!");
+document.getElementById("orderList").innerHTML="";
+document.getElementById("total").innerText=0;
+total=0;
+}
+
+}
+
+</script>
+
+</body>
+</html>

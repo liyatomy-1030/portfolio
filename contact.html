@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#0b0b1f;
+color:white;
+text-align:center;
+}
+
+.container{
+width:400px;
+margin:auto;
+background:#111;
+padding:30px;
+border-radius:12px;
+margin-top:60px;
+}
+
+input, textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:6px;
+border:none;
+}
+
+button{
+background:#ff1a1a;
+color:white;
+border:none;
+padding:12px;
+width:100%;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#cc0000;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Contact Canteen</h2>
+
+<form onsubmit="sendMessage(event)">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<input type="text" placeholder="Subject" required>
+
+<textarea rows="4" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+<script>
+
+function sendMessage(event){
+
+event.preventDefault();
+
+alert("Message Sent Successfully!");
+
+}
+
+</script>
+
+</body>
+</html>
